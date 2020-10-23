@@ -6,4 +6,4 @@ security:
       clientId: exampleClient
       clientSecret: exampleSecret
     resource:
-      token-info-uri: http://localhost:9090/oauth/check_token
+      token-info-uri: http://127.0.0.1:9090/oauth/check_token

@@ -1,0 +1,23 @@
+version: '3'
+services:
+  auth:
+    image: 438169330067.dkr.ecr.ap-southeast-2.amazonaws.com/oauth-server:latest
+    ports:
+      - "9090:9090"
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: tutorial
+        awslogs-region: ap-southeast-2
+        awslogs-stream-prefix: auth
+  res:
+    image: 438169330067.dkr.ecr.ap-southeast-2.amazonaws.com/res-server:1
+    ports:
+      - "9081:9081"
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: tutorial
+        awslogs-region: ap-southeast-2
+        awslogs-stream-prefix: res-server
+
