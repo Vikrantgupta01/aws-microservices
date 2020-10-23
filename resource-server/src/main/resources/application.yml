@@ -1,0 +1,9 @@
+server:
+  port: 9081
+security:
+  oauth2:
+    client:
+      clientId: exampleClient
+      clientSecret: exampleSecret
+    resource:
+      token-info-uri: http://localhost:9090/oauth/check_token
