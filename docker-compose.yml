@@ -11,7 +11,7 @@ services:
         awslogs-region: ap-southeast-2
         awslogs-stream-prefix: auth
   res:
-    image: 438169330067.dkr.ecr.ap-southeast-2.amazonaws.com/res-server:1
+    image: 438169330067.dkr.ecr.ap-southeast-2.amazonaws.com/res-server:2
     ports:
       - "9081:9081"
     logging:
